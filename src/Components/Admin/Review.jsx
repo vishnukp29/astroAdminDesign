@@ -3,6 +3,7 @@ import { CiEdit } from "react-icons/ci";
 import { AiOutlineDelete } from "react-icons/ai";
 import { BsArrowDownUp } from "react-icons/bs";
 import Sidebar from "./Sidebar";
+import { Link } from "react-router-dom";
 
 function Review() {
     const [open, setOpen] = useState(true); 
@@ -20,7 +21,7 @@ function Review() {
         <div className="flex justify-between m-4">
           <div>
             <button className="bg-blue-700 text-white px-8 py-2 rounded-md hover:to-blue-500">
-              Add Review
+              <Link to={'/add-review'}>Add Review</Link>
             </button>
           </div>
           <div>

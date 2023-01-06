@@ -29,7 +29,7 @@ const Sidebar = () => {
     { title: "Horoscope", href: "/horoscope", icon: <BsChatLeftText /> },
     {
       title: "Master",
-      href: "Master",
+      href: "",
       icon: <BiNetworkChart />,
       subMenus: [
         {
@@ -52,7 +52,7 @@ const Sidebar = () => {
     },
     {
       title: "Manage Astrologer",
-      href: "Master Astrologer",
+      href: "",
       icon: <FaUser />,
       subMenus: [
         {
@@ -65,7 +65,7 @@ const Sidebar = () => {
     },
     {
       title: "Manage Users",
-      href: "Manage Users",
+      href: "",
       icon: <FaUser />,
       subMenus: [
         {
@@ -76,12 +76,12 @@ const Sidebar = () => {
         },
       ],
     },
-    { title: "Follower", href: "Chart", icon: <FaUsers /> },
+    { title: "Follower", href: "/follower", icon: <FaUsers /> },
     { title: "Review", href: "/review", gap: true, icon: <FaUsers /> },
     { title: "Blog", href: "/blog", icon: <FaBloggerB />, current: false },
     {
       title: "Manage Services",
-      href: "Manage Services",
+      href: "",
       icon: <BiNetworkChart />,
       subMenus: [
         {
@@ -108,7 +108,7 @@ const Sidebar = () => {
     },
     {
       title: "Astro Bazar",
-      href: "Astro Bazar",
+      href: "",
       icon: <BiNetworkChart />,
       subMenus: [
         {
@@ -118,22 +118,22 @@ const Sidebar = () => {
         },
         {
           title: "Product Sub Category",
-          href: "/bazar/product-subcategory",
+          href: "/product-subcategory",
           cName: "sub-nav",
         },
         {
           title: "Product",
-          href: "/bazar/product",
+          href: "/products",
         },
         {
           title: "Order",
-          href: "/bazar/order",
+          href: "/order",
         },
       ],
     },
     {
       title: "Coupon",
-      href: "Coupon",
+      href: "",
       icon: <BiNetworkChart />,
       subMenus: [
         {
@@ -143,14 +143,14 @@ const Sidebar = () => {
         },
         {
           title: "Coupon List",
-          href: "/coupon/list",
+          href: "/coupon-list",
           cName: "sub-nav",
         },
       ],
     },
     {
       title: "Quote",
-      href: "Quote",
+      href: "",
       icon: <BiNetworkChart />,
       subMenus: [
         {
@@ -170,7 +170,7 @@ const Sidebar = () => {
     { title: "Contact Us", href: "Contact", icon: <MdCall /> },
     {
       title: "Notifications",
-      href: "Notifications",
+      href: "",
       icon: <MdNotifications />,
       subMenus: [
         {
@@ -193,7 +193,7 @@ const Sidebar = () => {
     },
     {
       title: "Reports",
-      href: "Reports",
+      href: "",
       icon: <BsFileSpreadsheetFill />,
       subMenus: [
         {
@@ -212,7 +212,7 @@ const Sidebar = () => {
     },
     {
       title: "Settings",
-      href: "Settings",
+      href: "",
       icon: <MdSettings />,
       subMenus: [
         {

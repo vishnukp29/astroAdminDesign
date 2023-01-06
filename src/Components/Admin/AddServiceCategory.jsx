@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 
-function AddService() {
+function AddServiceCategory() {
   const [open, setOpen] = useState(true);
   return (
     <div className="h-full bg-slate-200 flex">
@@ -18,40 +18,16 @@ function AddService() {
           <span className="hover:cursor-pointer text-blue-500 hover:text-gray-400 ">
             Service/
           </span>
-          <span> AddService </span>
+          <span> AddService Category List</span>
         </div>
         <div className="w-full flex justify-center p-5 ">
           <div className=" w-full border bg-white shadow-lg rounded-lg ">
-            <div className="bg-blue-500 p-4 text-white rounded-t-lg">Add Service </div>
+            <div className="bg-blue-500 p-4 text-white rounded-t-lg">Add Service Category</div>
             <div className="m-4">
               <div className=" ">
                 <div>
                   <label className="font-semibold">
-                    Service Category
-                    <sup className="text-red-600 text-lg">*</sup>{" "}
-                  </label>
-                </div>
-                <div className="mt-2">
-                  <select
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
-                    type="text"
-                    placeholder="Enter Service Category Name">
-                        <option value="select">Select a Service</option>
-                        <option value="volvo">Online Puja</option>
-                        <option value="Evil Eye (Najar Lagna)">Evil Eye (Najar Lagna)</option>
-                        <option value="Spell">Spell</option>
-                        <option value="Reiki Healing">Reiki Healing</option>
-                        <option value="Theta Healing">Theta Healing</option>
-                        <option value="Cord Cutting">Cord Cutting</option>
-                        <option value="Birth Time Rectification">Birth Time Rectification</option>
-                        <option value="Past Life Regression">Past Life Regression</option>
-                    </select>
-                </div>
-              </div>
-              <div className="mt-4 ">
-                <div>
-                  <label className="font-semibold">
-                    Service Name
+                    Service Category Name
                     <sup className="text-red-600 text-lg">*</sup>{" "}
                   </label>
                 </div>
@@ -59,22 +35,7 @@ function AddService() {
                   <input
                     className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
                     type="text"
-                    placeholder="Enter Service Name"
-                  />
-                </div>
-              </div>
-              <div className="mt-3">
-                <div>
-                  <label className="font-semibold">
-                    Service Description
-                    <sup className="text-red-600 text-lg">*</sup>{" "}
-                  </label>
-                </div>
-                <div className="mt-2">
-                  <textarea
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
-                    type="text"
-                    placeholder=""
+                    placeholder="Enter Service Category Name"
                   />
                 </div>
               </div>
@@ -99,6 +60,23 @@ function AddService() {
                 </div>
               </div>
               <div className="mt-3 ">
+                <div>
+                  <label>
+                    <span className="font-semibold">Service Category Background</span>
+                    <span className="text-sm text-muted ">
+                      ( File must be in PNG | JPG | JPEG and size must be 500 x
+                      250 px){" "}
+                    </span>
+                    <sup className="text-red-600 text-lg">*</sup>
+                  </label>
+                </div>
+                <div className="mt-2">
+                  <input
+                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
+                    type="file"
+                    placeholder="Icon"
+                  />
+                </div>
                 <div className="m-4">
                   <input type="checkbox" />
                   Active
@@ -121,4 +99,4 @@ function AddService() {
   );
 }
 
-export default AddService;
+export default AddServiceCategory;
