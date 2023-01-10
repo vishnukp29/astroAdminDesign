@@ -23,7 +23,7 @@ const Dashboard = () => {
         <Sidebar />
       </section>
 
-      <div className="dashboardContainer">
+      <div className="dashboardContainer w-full">
         <div className="container">
           <h1 className="relative flex justify-center text-4xl font-bold mb-5">
             Dashboard

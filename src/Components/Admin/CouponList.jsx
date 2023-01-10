@@ -5,7 +5,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { BsArrowDownUp } from "react-icons/bs";
 import cancel from "../../Assests/cancel.png";
 import discount from "../../Assests/discount.jpg";
-
+import { Link } from "react-router-dom";
 
 function CouponList() {
     const [open, setOpen] = useState(true);
@@ -23,7 +23,7 @@ function CouponList() {
         <div className="flex justify-between m-4">
           <div>
             <button className="bg-blue-700 text-white px-8 py-2 rounded-md hover:to-blue-500">
-              Add Coupon
+              <Link to={'/add-coupon'}>Add Coupon</Link> 
             </button>
           </div>
           <div>

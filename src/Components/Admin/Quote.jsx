@@ -3,52 +3,57 @@ import Sidebar from "./Sidebar";
 import { CiEdit } from "react-icons/ci";
 import { AiOutlineDelete } from "react-icons/ai";
 import { BsArrowDownUp } from "react-icons/bs";
-import rudraksha from "../../Assests/rudraksha.jpg";
-import germstone from "../../Assests/germstone.jpg";
+// import rudraksha from "../assets/rudraksha.jpg";
+// import eye from "../assets/eye.jpg";
+// import germstone from "../assets/germstone.jpg";
+// import birth from "../assets/birth.png";
+import user1 from "../../Assests/user1.jpg";
+import user from "../../Assests/user.jpeg";
 import { Link } from "react-router-dom";
 
-function ProductCategory() {
-  const [open, setOpen] = useState(true);
+
+function Quote() {
+    const [open, setOpen] = useState(true);
   return (
     <div className="h-full bg-slate-200 flex">
-      <section
+        <section
         className={` ${
           open ? "w-72" : "w-20 "
         } bg-dark-purple h-fit relative duration-300 scrollbar scrollbar-thin-gray-800`}
-       >
+      >
         {" "}
         <Sidebar />
       </section>
-      <div className=" ">
+      <div className="w-full ">
         <div className="flex justify-between m-4">
           <div>
             <button className="bg-blue-700 text-white px-8 py-2 rounded-md hover:to-blue-500">
-              <Link to={'/addproduct-category'}>Add Product Category</Link>
+             <Link to={'/add-quote'}> Add Quote</Link>
             </button>
           </div>
           <div>
             <div>
+            
               <span className="hover:cursor-pointer hover:text-red-400">
                 Home/
               </span>
-              <span> Product Category List</span>
+              <span>Quote List</span>
             </div>
           </div>
         </div>
 
         <div className="m-4 bg-white rounded-md shadow-indigo-50 p-5 ">
-          <div> Product Category List</div>
+          <div>Quote List</div>
           <hr />
           <div className="flex justify-between m-2 align-center">
             <div className=" border rounded-md bg-gray-700 w-fit ">
               <button className="text-white p-2">Copy</button>
               <button className="text-white p-2">CSV</button>
               <button className="text-white p-2">Excel</button>
-              <button className="text-white p-2">CD</button>
               <button className="text-white p-2">Print</button>
             </div>
             <div>
-              Seaech:
+              Search:
               <input placeholder="" className="border border-gray-500" />
             </div>
           </div>
@@ -65,7 +70,7 @@ function ProductCategory() {
                 </th>
                 <th className="border border-gray-300 md:p-5 ">
                   <div className="flex justify-between justify-items-center items-center text-center ">
-                    <div>ProductCategory Name</div>
+                    <div>Quote Date</div>
                     <div>
                       <BsArrowDownUp size={12} />
                     </div>
@@ -73,20 +78,13 @@ function ProductCategory() {
                 </th>
                 <th className="border border-gray-300 md:p-5 ">
                   <div className="flex justify-between justify-items-center items-center text-center">
-                    <div>ProductCategory icon</div>
+                    <div>Quote Image</div>
                     <div>
                       <BsArrowDownUp size={12} />
                     </div>
                   </div>
                 </th>
-                <th className="border border-gray-300 md:p-5 ">
-                  <div className="flex justify-between justify-items-center items-center text-center">
-                    <div>ProductCategory Background</div>
-                    <div>
-                      <BsArrowDownUp size={12} />
-                    </div>
-                  </div>
-                </th>
+                
                 <th className="border border-gray-300 md:p-5 ">
                   <div className="flex justify-between justify-items-center items-center text-center">
                     <div>Status</div>
@@ -104,7 +102,7 @@ function ProductCategory() {
                   </div>
                 </th>
                 <th className="border border-gray-300 md:p-5 ">
-                  <div className="flex justify-between justify-items-center items-center text-center">
+                  <div className="flex justify-between items-center text-center">
                     <div>Action</div>
                     <div>
                       <BsArrowDownUp size={12} />
@@ -112,15 +110,13 @@ function ProductCategory() {
                   </div>
                 </th>
               </tr>
-              <tr className="bg-gray-200 h-16 flex   sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+              <tr className="bg-gray-200 h-16 flex   sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0 ">
                 <td className="border border-gray-300 md:p-5  ">1</td>
-                <td className="border border-gray-300 md:p-5 ">Rudraksha</td>
+                <td className="border border-gray-300 md:p-5 ">	25/09/2022</td>
                 <td className="border border-gray-300 md:p-5 ">
-                  <img src={rudraksha} height="150px" width="150px" />
+                  <img src={user1} height="100px" width="100px" />
                 </td>
-                <td className="border border-gray-300 md:p-5 ">
-                  <img src={rudraksha} height="150px" width="150px" />
-                </td>
+                
 
                 <td className="border border-gray-300 md:p-5 ">Active</td>
                 <td className="border border-gray-300 md:p-5 ">
@@ -139,14 +135,11 @@ function ProductCategory() {
               </tr>
               <tr className="h-16 flex  sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
                 <td className="border border-gray-300 md:p-5 ">2</td>
-                <td className="border border-gray-300 md:p-5 ">Gemstone</td>
+                <td className="border border-gray-300 md:p-5 ">	25/09/2022</td>
                 <td className="border border-gray-300 md:p-5 ">
-                  <img src={germstone} height="150px" width="150px" />
+                  <img src={user} height="100px" width="100px" />
                 </td>
-                <td className="border border-gray-300 md:p-5 ">
-                  <img src={germstone} height="150px" width="150px" />
-                </td>
-
+                
                 <td className="border border-gray-300 md:p-5 ">Active</td>
                 <td className="border border-gray-300 md:p-5 ">
                   4th Sep, 2022 03:41 PM
@@ -162,21 +155,21 @@ function ProductCategory() {
                   </div>
                 </div>
               </tr>
+              
               <tr className="flex  sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
                 <th className="border border-gray-300 md:p-5 ">#</th>
                 <th className="border border-gray-300 md:p-5  ">
-                  ProductCategory Name
+                  Quote Date
                 </th>
                 <th className="border border-gray-300 md:p-5 ">
-                  ProductCategory icon
+                Quote Image
                 </th>
-                <th className="border border-gray-300 md:p-5 ">
-                  ProductCategory Background
-                </th>
+                
                 <th className="border border-gray-300 md:p-5 ">Status </th>
                 <th className="border border-gray-300 md:p-5 ">Created Date</th>
                 <th className="border border-gray-300 md:p-5 ">Action</th>
               </tr>
+              
             </table>
           </div>
           <div className="flex justify-between m-2 align-center text-center items-center">
@@ -199,4 +192,4 @@ function ProductCategory() {
   );
 }
 
-export default ProductCategory;
+export default Quote;

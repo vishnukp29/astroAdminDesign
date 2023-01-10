@@ -8,6 +8,7 @@ import sub2 from "../../Assests/sub2.jpg";
 import sub3 from "../../Assests/sub3.jpg";
 import sub4 from "../../Assests/sub4.jpg";
 import Sidebar from "./Sidebar";
+import { Link } from "react-router-dom";
 
 
 function Product() {
@@ -18,7 +19,7 @@ function Product() {
         className={` ${
           open ? "w-72" : "w-20 "
         } bg-dark-purple h-fit relative duration-300 scrollbar scrollbar-thin-gray-800`}
-       >
+        >
         {" "}
         <Sidebar />
       </section>
@@ -26,7 +27,7 @@ function Product() {
         <div className="flex justify-between m-4">
           <div>
             <button className="bg-blue-700 text-white px-8 py-2 rounded-md hover:to-blue-500">
-              Add Product <div/>Subcategory
+              <Link to={''}>Add Product</Link>  
             </button>
           </div>
           <div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TextEditor from "../TextEditor/TextEditor";
 import Sidebar from "./Sidebar";
 
 function AddService() {
@@ -9,7 +10,7 @@ function AddService() {
         className={` ${
           open ? "w-72" : "w-20 "
         } bg-dark-purple h-fit relative duration-300 scrollbar scrollbar-thin-gray-800`}
-      >
+       >
         {" "}
         <Sidebar />
       </section>
@@ -33,7 +34,7 @@ function AddService() {
                 </div>
                 <div className="mt-2">
                   <select
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
+                    className="w-full lg:w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
                     type="text"
                     placeholder="Enter Service Category Name">
                         <option value="select">Select a Service</option>
@@ -57,7 +58,7 @@ function AddService() {
                 </div>
                 <div className="mt-2">
                   <input
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
+                    className="w-full lg:w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
                     type="text"
                     placeholder="Enter Service Name"
                   />
@@ -71,28 +72,24 @@ function AddService() {
                   </label>
                 </div>
                 <div className="mt-2">
-                  <textarea
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
-                    type="text"
-                    placeholder=""
-                  />
+                  <TextEditor/>
                 </div>
               </div>
-              <div className=" mt-3">
+              <div className=" mt-12">
                 <div>
                   <label>
                     <span className="font-semibold">Service Category Icon</span>
                     <span className="text-sm text-muted">
                       {" "}
-                      ( File must be in PNG | JPG | JPEG and size must be 200 x
-                      200 px){" "}
+                      ( File must be in PNG | JPG | JPEG and size must be 400 x
+                      400 px){" "}
                     </span>
                     <sup className="text-red-600 text-lg">*</sup>
                   </label>
                 </div>
                 <div className="mt-2">
                   <input
-                    className="w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
+                    className="w-full lg:w-3/4 border p-1 focus:ring-1 ring-blue-500 focus:outline-none"
                     type="file"
                     placeholder="Icon"
                   />
@@ -116,7 +113,6 @@ function AddService() {
           </div>
         </div>
       </div>
-      {/* service category form */}
     </div>
   );
 }
